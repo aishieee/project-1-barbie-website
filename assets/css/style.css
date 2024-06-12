@@ -23,13 +23,6 @@ header {
     background-color: #ff69b4;
 }
 
-h1 {
-    font-family: "Pacifico", cursive;
-    font-weight: 400;
-    font-style: normal;
-    color: black;
-}
-
 /* Main content */
 main {
     background-color: #fcfbf4;
