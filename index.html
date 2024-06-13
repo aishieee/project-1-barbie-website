@@ -6,31 +6,36 @@
     <!-- Meta tags for search engines -->
     <meta name="description"
     content="Barbie. Tribute page for Barbie fans. Ruth Handler, Barbara Handler. Female characters, pink">
-<meta name="keywords" content="Barbie, fashion, doll, pink, Barbara, Handler, pro-feminist">
+    <meta name="keywords" content="Barbie, fashion, doll, pink, Barbara, Handler, pro-feminist">
     <title>Barbie</title>
     <!-- Favicon -->
-    <link rel="icon" href="assets/favicon.ico" >
+    <link rel="icon" href="assets/favicon/favicon.ico">
     <!-- Stylesheet -->
-     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+  <div class="wrapper">
      <!-- Header -->
      <header class="header">
         <div class="header__content">
             <a href="#" class="logo">
-                <img src="assets/barbie logo.png" alt="logo" class="logo__img">
+                <img src="assets/images/barbie logo.png" alt="logo" class="logo__img">
             </a>
+    <!-- Hamburger Icon -->
+            <div class="hamburger" id="hamburger">
+                &#9776;
+            </div>
     <!-- Nav bar -->
-            <nav class="nav">
+            <nav class="nav" id="nav">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#" class="nav__item">Home</a>
+                        <a href="#" class="nav__link">Home</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav__item">History</a>
+                        <a href="#" class="nav__link">History</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav__item">Impact</a>
+                        <a href="#" class="nav__link">Impact</a>
                     </li>
                     <li class="nav__item">
                         <a href="#" class="btn">Extrafun!</a>
@@ -39,13 +44,18 @@
             </nav>
         </div>
      </header>
-
-     
-
      <!-- Main content -->
      <main>Main content</main>
  
      <!-- Footer -->
      <footer>Footer</footer>
+    </div>
+    <!-- JavaScript -->
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function () {
+            var nav = document.getElementById('nav');
+            nav.classList.toggle('active');
+        });
+    </script>
 </body>
-</html> 
+</html>
