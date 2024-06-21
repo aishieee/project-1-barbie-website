@@ -57,10 +57,23 @@ a {
 
 /* Main content */
 main {
-    background-color: #fcfbf4;
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
 }
+
+/* Welcome */
+#welcome {
+    background-image: url('../images/barbie-welcome-pic.png');
+    background-size: cover;
+    background-position: center left;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 
 /* Footer */
 footer {
@@ -77,10 +90,10 @@ footer {
 /* Social media links in footer */
 
 
-/* Responsive design */
+/* Responsive design media queries */
 
-/* Media query: tablets and larger (768px and up) */
-@media (max-width: 768px) {
+/* Styles for phones (767px and below) */
+@media screen and (max-width: 767px) {
     .hamburger {
         display: block;
     }
@@ -99,15 +112,89 @@ footer {
         flex-direction: column;
         gap: 10px;
     }
-}
 
-/* Large devices (laptops and desktops, 1200px and up) */
-@media screen and (min-width: 1200px) {
-    footer {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
+    /* main */
+
+    #welcome {
+        height: 50vh;
+        padding: 30px;
+        text-align: center;
     }
 
+    /* footer */
+
+    .footer__content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+/*social media links */
+
+    #social-networks {
+        justify-content: center;
+    }
+
+    #social-networks li {
+        margin: 10px 0;
+    }
+}
+
+/* Styles for tablets (768px to 1199px) */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+/* main */
+
+#welcome {
+    height: 50vh;
+    padding: 30px;
+}
+
+/* footer */
+
+    .footer__content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Styles for large screens (1200px and above) */
+@media screen and (min-width: 1200px) {
+
+/* main */
+
+#welcome {
+    height: 50vh;
+}
+
+/* footer */
+
+    .footer__content {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+/* social media links */
+
+    #social-networks {
+        justify-content: flex-start;
+    }
 }
