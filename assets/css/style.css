@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chewy&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
@@ -59,6 +60,26 @@ a {
 main {
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
+}
+
+.ruth {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.ruth img {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.ruth h2 {
+    margin: 20px 0;
+    font-size: 2em;
+    font-weight: 200;
+    font-family: "Montserrat Alternates", sans-serif;
+    color: #ff69b4;
 }
 
 /* Welcome */
