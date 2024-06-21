@@ -74,6 +74,12 @@ main {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+.doll h1 {
+    font-size: 4em;
+    font-weight: lighter;
+    font-family: "Chewy", system-ui;
+    margin: 0;
+}
 
 /* Footer */
 footer {
@@ -119,6 +125,12 @@ footer {
         height: 50vh;
         padding: 30px;
         text-align: center;
+    }
+
+    .doll h1 {
+        font-size: 3em;
+        font-weight: 400;
+        font-family: "Chewy", system-ui;
     }
 
     /* footer */
