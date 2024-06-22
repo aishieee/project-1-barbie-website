@@ -15,7 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     /* Generic project styles */
-    color: #f5f5f5;
+    color: black;
     font-family: "Chewy", system-ui;
 }
 
@@ -62,25 +62,46 @@ main {
     flex: 1 0 auto;
 }
 
+/* Barbie's creator */
+
 .ruth {
-    text-align: center;
-    padding: 50px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    margin-left: 10%;
 }
 
 .ruth img {
     width: 300px;
     height: auto;
-    display: block;
-    margin: 0 auto 20px;
+    margin-right: 20px;
 }
 
-.ruth h2 {
-    margin: 20px 0;
+.creator h2 {
     font-size: 2em;
-    font-weight: 200;
+    font-weight: lighter;
     font-family: "Montserrat Alternates", sans-serif;
     color: #ff69b4;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    margin-left: 10%;
 }
+
+.ruth h3 {
+    font-size: 2em;
+    color: black;
+}
+
+.ruth p {
+    font-size: 1em;
+    color: blueviolet;
+}
+
+
+
 
 /* Welcome */
 #welcome {
@@ -101,6 +122,8 @@ main {
     font-family: "Chewy", system-ui;
     margin: 0;
 }
+
+
 
 /* Footer */
 footer {
