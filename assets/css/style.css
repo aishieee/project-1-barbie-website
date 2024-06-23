@@ -177,6 +177,8 @@ main {
     flex-direction: column;
     color: #ff69b4;
     background: white;
+    display: inline-block; 
+    font-size: 15px;
 }
 
 #timeline-event li {
@@ -197,6 +199,7 @@ main {
     position: absolute;
     color: black;
 }
+
 .circle {
     margin-top: -10px;
     top: 50%;
@@ -209,14 +212,17 @@ main {
     display: block;
     position: absolute;
 }
+
 .content {
-    max-height: 20px;
-    padding: 50px 20px 0;
+    max-height: 280px;
+    padding: 50px 20px;
     border-color: transparent;
     border-width: 2px;
     border-style: solid;
     border-radius: 0.5em;
     position: relative;
+    overflow: hidden;
+    width: 100%;
 }
 
 .content:before, .content:after {
@@ -228,12 +234,14 @@ main {
     pointer-events: none;
     right: 100%;
 }
+
 .content:before {
     border-right-color: inherit;
     border-width: 20px;
     top: 50%;
     margin-top: -20px;
 }
+
 .content:after {
     border-right-color: lightgray;
     border-width: 17px;
@@ -242,12 +250,16 @@ main {
 }
 
 .content p {
-    max-height: 0;
+    max-height: 250px;
+    padding: 50px 20px;
     color: transparent;
     text-align: justify;
     word-break: break-word;
     hyphens: auto;
-    overflow: hidden;
+    overflow-y: hidden; 
+    margin: 0;
+    position: relative;
+    width: 100%;
 }
 
 label {
@@ -256,29 +268,37 @@ label {
     z-index: 100;
     cursor: pointer;
     top: 20px;
-    transition: tranform 0.2s linear;
+    transition: transform 0.2s linear;
+    display: block;
+    padding: 10px 0;
 }
+
 .radio {
     display: block;
 }
+
 .radio:checked + .relative label {
     cursor: auto;
     transform: translateX(42px);
 }
+
 .radio:checked + .relative .circle {
     background: lightgrey;
 }
+
 .radio:checked ~ .content {
-    max-height: 180px;
+    max-height: 280px;
     border-color: palevioletred;
     margin-right: 20px;
     transform: translateX(20px);
     transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
 }
+
 .radio:checked ~ .content p {
-    max-height: 200px;
+    max-height: 250px;
     color: black;
-    transition: color 0.3s linear 0.3s;
+    overflow-y: scroll; 
+    transition: color 0.3s linear 0.3s, overflow-y 0s 0.4s; 
 }
 
 
