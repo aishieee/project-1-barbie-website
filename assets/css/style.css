@@ -163,7 +163,25 @@ main {
     margin-left: 30%;
 }
 
-
+/* Timeline */
+#timeline-event {
+    list-style: none;
+    padding-left: 30px;
+    width: 300px;
+    border-left: 8px solid #ff69b4;
+    margin-left: 35%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: system-ui;
+    flex-direction: column;
+    color: #ff69b4;
+    background: white;
+}
+#timeline-event li {
+    margin: 40px 0;
+    position: relative;
+}
 
 /* Footer */
 footer {
