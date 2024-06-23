@@ -116,8 +116,6 @@ main {
 }
 
 
-
-
 /* Welcome */
 #welcome {
     background-image: url('../images/barbie-welcome-pic.png');
@@ -138,7 +136,30 @@ main {
     margin: 0;
 }
 
+/* History section */
 
+#timeline {
+    font-size: 2em;
+    font-weight: lighter;
+    font-family: "Montserrat Alternates", sans-serif;
+    color: #ff69b4;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    margin-left: 35%;
+}
+
+.timeline-header {
+    background-color: #F5F5F5;
+    color: #333333;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    width: 45%;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-left: 30%;
+}
 
 /* Footer */
 footer {
