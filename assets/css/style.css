@@ -178,10 +178,47 @@ main {
     color: #ff69b4;
     background: white;
 }
+
 #timeline-event li {
     margin: 40px 0;
     position: relative;
 }
+
+#timeline p {
+    margin: 0 0 15px;
+}
+
+.date {
+    margin-top: -10px;
+    top: 50%;
+    left: -158px;
+    font-size: 0.95em;
+    line-height: 20px;
+    position: absolute;
+    color: black;
+}
+.circle {
+    margin-top: -10px;
+    top: 50%;
+    left: -44px;
+    width: 10px;
+    height: 10px;
+    background: black;
+    border: 5px solid #ff69b4;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+}
+.content {
+    max-height: 20px;
+    padding: 50px 20px 0;
+    border-color: transparent;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 0.5em;
+    position: relative;
+}
+
 
 /* Footer */
 footer {
