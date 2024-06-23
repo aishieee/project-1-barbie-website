@@ -138,6 +138,8 @@ main {
 
 /* History section */
 
+
+
 #timeline {
     font-size: 2em;
     font-weight: lighter;
@@ -160,6 +162,8 @@ main {
     text-transform: capitalize;
     margin-left: 30%;
 }
+
+
 
 /* Footer */
 footer {
