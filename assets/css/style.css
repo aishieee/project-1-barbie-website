@@ -219,6 +219,28 @@ main {
     position: relative;
 }
 
+.content:before, .content:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: solid transparent;
+    position: absolute;
+    pointer-events: none;
+    right: 100%;
+}
+.content:before {
+    border-right-color: inherit;
+    border-width: 20px;
+    top: 50%;
+    margin-top: -20px;
+}
+.content:after {
+    border-right-color: lightgray;
+    border-width: 17px;
+    top: 50%;
+    margin-top: -17px;
+}
+
 
 /* Footer */
 footer {
