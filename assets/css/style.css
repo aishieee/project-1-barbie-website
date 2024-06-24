@@ -321,6 +321,40 @@ header #impact {
     text-align: center;
 }
 
+.slideshow {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.slide {
+    display: none;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-family: "Montserrat Alternates", sans-serif;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.slideshow .slide:first-child {
+    display: block;
+}
+
 section {
     height: 100vh;
     display: flex;
