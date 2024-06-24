@@ -28,6 +28,13 @@ header {
     color: white;
 }
 
+header #impact {
+    font-family: "Roboto", system-ui;
+    font-weight: 100;
+    text-align: center;
+}
+
+
 /* Nav bar */
 ul {
     list-style: none;
@@ -171,13 +178,12 @@ main {
     border-left: 8px solid #ff69b4;
     margin-left: 35%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     font-family: system-ui;
     flex-direction: column;
     color: #ff69b4;
-    background: white;
-    display: inline-block; 
+    background: white; 
     font-size: 15px;
 }
 
@@ -194,7 +200,7 @@ main {
     margin-top: -10px;
     top: 50%;
     left: -158px;
-    font-size: 0.95em;
+    font-size: 2em;
     line-height: 20px;
     position: absolute;
     color: black;
@@ -300,6 +306,10 @@ label {
     overflow-y: scroll; 
     transition: color 0.3s linear 0.3s, overflow-y 0s 0.4s; 
 }
+
+/* Impact */
+
+
 
 
 /* Footer */
