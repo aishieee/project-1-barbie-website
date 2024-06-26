@@ -309,8 +309,23 @@ header #impact {
     text-align: center;
 }
 
+.slideshow {
+    padding: 2rem;
+}
 
+.slideshow-content {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
 
+.slider {
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
 
 /* Footer */
 footer {
