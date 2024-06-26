@@ -335,6 +335,7 @@ header #impact {
     object-fit: cover;
 }
 
+
 .slider-nav {
     display: flex;
     column-gap: 1rem;
@@ -353,6 +354,9 @@ header #impact {
     opacity: 0.75;
     transition: opacity ease 250ms;
 }
+
+
+
 
 /* Footer */
 footer {
