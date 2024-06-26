@@ -321,10 +321,17 @@ header #impact {
 
 .slider {
     display: flex;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 16/9;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
+    border-radius: 0.5rem;
+}
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
 }
 
 /* Footer */
