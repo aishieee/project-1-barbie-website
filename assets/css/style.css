@@ -178,12 +178,11 @@ main {
     flex-direction: column;
     color: #ff69b4;
     background: white; 
-    font-size: 15px;
 }
 
 #timeline-event li {
     margin: 40px 0;
-    position: relative;
+    position: relative;   
 }
 
 #timeline p {
@@ -214,15 +213,14 @@ main {
 }
 
 .content {
-    max-height: 280px;
-    padding: 50px 20px;
+    padding: 50px 20px 0;
     border-color: transparent;
     border-width: 2px;
     border-style: solid;
     border-radius: 0.5em;
     position: relative;
-    overflow: hidden;
-    width: 100%;
+    overflow: auto;
+    transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
 }
 
 .content:before, .content:after {
@@ -237,9 +235,9 @@ main {
 
 .content:before {
     border-right-color: inherit;
-    border-width: 20px;
+    border-width: 17px;
     top: 50%;
-    margin-top: -20px;
+    margin-top: -17px;
 }
 
 .content:after {
@@ -250,16 +248,11 @@ main {
 }
 
 .content p {
-    max-height: 250px;
-    padding: 50px 20px;
     color: transparent;
     text-align: justify;
     word-break: break-word;
     hyphens: auto;
-    overflow-y: hidden; 
-    margin: 0;
-    position: relative;
-    width: 100%;
+    overflow: auto;
 }
 
 label {
@@ -269,8 +262,6 @@ label {
     cursor: pointer;
     top: 20px;
     transition: transform 0.2s linear;
-    display: block;
-    padding: 10px 0;
 }
 
 .radio {
@@ -287,7 +278,7 @@ label {
 }
 
 .radio:checked ~ .content {
-    max-height: 280px;
+    max-height: none;
     border-color: palevioletred;
     margin-right: 20px;
     transform: translateX(20px);
@@ -295,10 +286,8 @@ label {
 }
 
 .radio:checked ~ .content p {
-    max-height: 250px;
-    color: black;
-    overflow-y: scroll; 
-    transition: color 0.3s linear 0.3s, overflow-y 0s 0.4s; 
+    max-height: none;
+    color: black; 
 }
 
 /* Impact */
