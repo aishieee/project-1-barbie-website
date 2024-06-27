@@ -371,6 +371,16 @@ header #impact {
     text-align: center;
 }
 
+#impact-text p span {
+    color: hsl(277, 100%, 49%);
+    font-weight: bold;
+}
+
+#impact-text p em {
+    color: #db0e90;
+    font-style: italic;
+}
+
 
 
 
