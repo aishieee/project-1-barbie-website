@@ -355,6 +355,22 @@ header #impact {
     transition: opacity ease 250ms;
 }
 
+/* Slideshow text */
+
+#impact-text p {
+    color: black;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    word-spacing: 1.05;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 
 
 
