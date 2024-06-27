@@ -156,7 +156,6 @@ main {
     background-color: #F5F5F5;
     color: #333333;
     font-family: 'Roboto', sans-serif;
-    padding: 10px;
     width: 45%;
     font-size: 15px;
     font-weight: bold;
@@ -206,7 +205,7 @@ main {
     height: 10px;
     background: black;
     border: 5px solid #ff69b4;
-    border-radius: 50%;
+    
     display: block;
     position: absolute;
 }
@@ -214,9 +213,9 @@ main {
 .content {
     padding: 50px 20px 0;
     border-color: transparent;
-    border-width: 2px;
+    
     border-style: solid;
-    border-radius: 0.5em;
+    
     position: relative;
     overflow: auto;
     transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
@@ -224,8 +223,7 @@ main {
 
 .content:before, .content:after {
     content: "";
-    width: 0;
-    height: 0;
+    
     border: solid transparent;
     position: absolute;
     pointer-events: none;
@@ -234,9 +232,7 @@ main {
 
 .content:before {
     border-right-color: inherit;
-    border-width: 17px;
-    top: 50%;
-    margin-top: -17px;
+   
 }
 
 .content:after {
@@ -251,7 +247,7 @@ main {
     text-align: justify;
     word-break: break-word;
     hyphens: auto;
-    overflow: auto;
+    
 }
 
 label {
@@ -277,7 +273,7 @@ label {
 }
 
 .radio:checked ~ .content {
-    max-height: none;
+    
     border-color: palevioletred;
     margin-right: 20px;
     transform: translateX(20px);
@@ -286,7 +282,7 @@ label {
 }
 
 .radio:checked ~ .content p {
-    max-height: none;
+
     color: black; 
     overflow: visible;
 }
@@ -461,6 +457,77 @@ footer {
     #social-networks li {
         margin: 10px 0;
     }
+
+    /*timeline */
+     #timeline-event {
+        margin-left: 0;
+        padding-left: 0;
+        border-left: none;
+    }
+
+    #timeline-event li {
+        padding: 50px 0;
+    }
+
+    label {
+        font-size: 1em;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: block;
+        transform: translateX(18px);
+    }
+
+   #timeline-event .content p {
+        margin-top: 10px;
+    }
+
+    .content {
+        padding: 20px 10px;
+        border-color: transparent;
+    }
+
+    .content:before, .content:after {
+        border: solid transparent;
+        bottom: 100%;
+    }
+
+    .content:before {
+        border-bottom-color: inherit;
+        border-width: 17px;
+        top: -16px;
+        left: 50px;
+        margin-left: -17px;
+    }
+
+    .content:after {
+        border-bottom-color: lightgray;
+        border-width: 20px;
+        top: -20px;
+        left: 50px;
+        margin-left: -20px;
+    }
+
+    .content p {
+        font-size: 0.9em;
+        line-height: 1.4;
+        padding-top: 0;
+    }
+
+    .date {
+        margin-left: 55%;
+        transform: translateY(20px);
+        position: relative;
+        font-size: 25px;
+    }
+
+    #timeline .timeline-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
 }
 
 /* Styles for tablets (768px to 1199px) */
@@ -483,6 +550,53 @@ footer {
         flex-direction: column;
         gap: 10px;
     }
+
+    /* history */
+
+    #timeline-event {
+        margin-left: 0;
+        padding-left: 30px;
+        border-left: 8px solid #ff69b4;
+        margin-left: 35%;
+    }
+
+
+    label {
+        font-size: 1em;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: block;
+        transform: translateX(18px);
+    }
+
+   #timeline-event .content p {
+        margin-top: 10px;
+    }
+
+    .content {
+        padding: 20px 10px;
+        border-color: transparent;
+    }
+
+    .content p {
+        font-size: 0.9em;
+        line-height: 1.4;
+        padding-top: 0;
+    }
+
+    .date {
+    margin-top: -10px;
+    top: 50%;
+    left: -150px;
+    font-size: 2em;
+    line-height: 20px;
+    position: absolute;
+    color: black;
+}
+
+}
+   
 
 /* main */
 
