@@ -87,13 +87,13 @@ main {
 
 .creator h2 {
     font-size: 2em;
-    font-weight: lighter;
+    font-weight: 45%;
     font-family: "Montserrat Alternates", sans-serif;
     color: #ff69b4;
-    display: flex;
-    justify-content: flex-start; 
-    align-items: center;
-    margin-left: 10%;
+    
+    
+    
+    padding: 20px;
 }
 
 .ruth h3 {
@@ -459,11 +459,11 @@ footer {
     }
     
     .creator h2 {
-        font-size: 2em;
-        font-weight: lighter;
+        font-size: 1.5em;
+        font-weight: bold;
         font-family: "Montserrat Alternates", sans-serif;
-        color: #ff69b4;
-        margin-left: 10%;
+        text-align: center;
+        margin: 20px 0;
     }
     
     .ruth h3 {
@@ -510,12 +510,9 @@ footer {
         font-size: 1.5em;
         font-weight: bold;
         font-family: "Montserrat Alternates", sans-serif;
-        margin-left: 0;
-        margin-right: auto;
-        padding: 20px;
-        width: 100%;
-        
-    }
+        text-align: left;
+        margin: 20px 0;
+     }
     
     .timeline-header {
         background-color: #F5F5F5;
@@ -627,11 +624,10 @@ footer {
     /* history */
 
     #timeline {
-        font-size: 1.5em;
-        font-weight: bold;
+        font-size: 2em%;
+        font-weight: 45%;
         font-family: "Montserrat Alternates", sans-serif;
-        margin-left: 45%;
-        margin-right: auto;
+        
         padding: 20px;
         width: 100%;
         
