@@ -27,8 +27,6 @@ header {
     color: white;
 }
 
-
-
 /* Nav bar */
 .nav ul {
     list-style: none;
@@ -424,17 +422,51 @@ header #impact {
 /* Footer */
 footer {
     background-color: #ff69b4;
-    padding: 10px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
-    text-align: center;
     color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
 }
 
 #social-networks {
-    
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
+
+#social-networks li {
+    margin: 0 10px;
+}
+
+#social-networks a {
+    color: white;
+    text-decoration: none;
+}
+
+#social-networks a:hover {
+    color: rgb(213, 21, 136);
+}
+
+.fa-brands {
+    font-size: 1.5em; 
+}
+
+
 
 
 /* Social media links in footer */
@@ -516,20 +548,7 @@ footer {
 
     /* footer */
 
-    .footer__content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-/*social media links */
-
-    #social-networks {
-        justify-content: center;
-    }
-
-    #social-networks li {
-        margin: 10px 0;
-    }
+    
 
     /*timeline */
 
@@ -702,10 +721,6 @@ footer {
 
 /* footer */
 
-
-
-}
-   
 
 
 /* Styles for large screens (1200px and above) */
