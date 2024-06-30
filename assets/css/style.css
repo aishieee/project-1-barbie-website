@@ -13,19 +13,27 @@
 
 /* General styles */
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    /* Generic project styles */
     color: black;
 }
 
 /* Header */
-header {
+.header {
     background-color: #ff69b4;
     width: 100%;
-    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
+
+.header__content {
+    width: 100%;
+}
+
 
 /* Nav bar */
 .nav ul {
@@ -43,6 +51,12 @@ a {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
 }
 
 .nav li {
@@ -70,7 +84,6 @@ a {
     overflow: hidden;
     padding: 0;
     margin: 0;
-    flex-direction: row;
     justify-content: space-around;
 }
 
@@ -87,6 +100,7 @@ a {
     display: none;
     cursor: pointer;
     font-size: 24px;
+    color: white;
 }
 
 
@@ -673,7 +687,7 @@ footer {
     /* history */
 
     #timeline {
-        font-size: 2em%;
+        font-size: 2em;
         font-weight: 45%;
         font-family: "Montserrat Alternates", sans-serif;
         
@@ -742,9 +756,15 @@ footer {
 /* Styles for large screens (1200px and above) */
 @media screen and (min-width: 1200px) {
 
+
+
 /* Nav bar and hamburger icon */
 
 .hamburger {
+    display: none !important;
+}
+
+.hidden-checkbox {
     display: none !important;
 }
 
