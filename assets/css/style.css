@@ -166,21 +166,21 @@ main {
 /* Welcome */
 #welcome {
     background-image: url('../images/barbie-welcome-pic-2.png');
+    width: 100%;
+    height: 65vh;
     background-size: cover;
-    background-position: top;
-    height: 70vh;
+    background-position: 20%;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .doll h1 {
-    font-size: 4em;
-    font-weight: lighter;
+    font-size: 3em;
+    font-weight: 400;
     font-family: "Chewy", system-ui;
-    margin: 0;
 }
 
 /* History section */
@@ -492,9 +492,6 @@ footer {
 
 /* Styles for phones (767px and below) */
 
-/* Welcome */
-
-
 
 /* Nav bar and hamburger icon */
 
@@ -507,19 +504,6 @@ footer {
         display: none;
     }
 
-    /* main */
-
-    #welcome {
-        height: 50vh;
-        padding: 30px;
-        text-align: center;
-    }
-
-    .doll h1 {
-        font-size: 3em;
-        font-weight: 400;
-        font-family: "Chewy", system-ui;
-    }
 
     /* Barbie creator */
 
@@ -677,12 +661,6 @@ footer {
 
 /* Styles for tablets (768px to 1199px) */
 
-/* Welcome */
-
-#welcome {
-    background-size: cover; 
-    background-position: center top; 
-}
 
 /* Nav bar and hamburger icon */
 
@@ -772,13 +750,6 @@ footer {
     /* Styles for large screens (1200px and above) */
     @media screen and (min-width: 1200px) {
 
-        /* Welcome */
-
-        #welcome {
-            background-size: cover; 
-            background-position: center top; 
-            height: 80vh;
-        }
 
         /* Nav bar and hamburger icon */
 
