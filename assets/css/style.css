@@ -23,7 +23,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 0; 
+    padding: 5px 0; 
     position: fixed;
     top: 0;
     left: 0;
@@ -109,7 +109,8 @@ a {
 main {
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
-    padding-bottom: 100px;
+    padding-top: 150px;
+    padding-bottom: 80px;
 }
 
 /* Barbie's creator */
@@ -164,10 +165,10 @@ main {
 
 /* Welcome */
 #welcome {
-    background-image: url('../images/barbie-welcome-pic.png');
+    background-image: url('../images/barbie-welcome-pic-2.png');
     background-size: cover;
     background-position: center left;
-    height: 50vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
