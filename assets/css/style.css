@@ -23,7 +23,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px 0; 
+    padding: 5px 0;
     position: fixed;
     top: 0;
     left: 0;
@@ -92,7 +92,7 @@ a {
     color: white;
 }
 
-.hidden-checkbox:checked ~ .menu {
+.hidden-checkbox:checked~.menu {
     display: flex
 }
 
@@ -135,9 +135,9 @@ main {
     font-weight: 45%;
     font-family: "Montserrat Alternates", sans-serif;
     color: #ff69b4;
-    
-    
-    
+
+
+
     padding: 20px;
 }
 
@@ -167,7 +167,7 @@ main {
 #welcome {
     background-image: url('../images/barbie-welcome-pic-2.png');
     background-size: cover;
-    background-position: center left;
+    background-position: top;
     height: 70vh;
     display: flex;
     justify-content: center;
@@ -191,8 +191,8 @@ main {
     font-weight: 45%;
     font-family: "Montserrat Alternates", sans-serif;
     color: #ff69b4;
-    
-    
+
+
     margin-left: 35%;
     padding: 20px;
 }
@@ -221,12 +221,12 @@ main {
     font-family: system-ui;
     flex-direction: column;
     color: #ff69b4;
-    background: white; 
+    background: white;
 }
 
 #timeline-event li {
     margin: 40px 0;
-    position: relative;   
+    position: relative;
 }
 
 #timeline p {
@@ -251,7 +251,7 @@ main {
     height: 10px;
     background: black;
     border: 5px solid #ff69b4;
-    
+
     display: block;
     position: absolute;
 }
@@ -259,17 +259,18 @@ main {
 .content {
     padding: 50px 20px 0;
     border-color: transparent;
-    
+
     border-style: solid;
-    
+
     position: relative;
     overflow: auto;
     transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
 }
 
-.content:before, .content:after {
+.content:before,
+.content:after {
     content: "";
-    
+
     border: solid transparent;
     position: absolute;
     pointer-events: none;
@@ -278,7 +279,7 @@ main {
 
 .content:before {
     border-right-color: inherit;
-   
+
 }
 
 .content:after {
@@ -293,7 +294,7 @@ main {
     text-align: justify;
     word-break: break-word;
     hyphens: auto;
-    
+
 }
 
 label {
@@ -309,17 +310,17 @@ label {
     display: block;
 }
 
-.radio:checked + .relative label {
+.radio:checked+.relative label {
     cursor: auto;
     transform: translateX(42px);
 }
 
-.radio:checked + .relative .circle {
+.radio:checked+.relative .circle {
     background: lightgrey;
 }
 
-.radio:checked ~ .content {
-    
+.radio:checked~.content {
+
     border-color: palevioletred;
     margin-right: 20px;
     transform: translateX(20px);
@@ -327,9 +328,9 @@ label {
     overflow: visible;
 }
 
-.radio:checked ~ .content p {
+.radio:checked~.content p {
 
-    color: black; 
+    color: black;
     overflow: visible;
 }
 
@@ -418,6 +419,7 @@ header #impact {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -428,6 +430,7 @@ header #impact {
         transform: translateY(20px);
         opacity: 0;
     }
+
     to {
         transform: translateY(0);
         opacity: 1;
@@ -455,7 +458,7 @@ footer {
 .footer-content {
     display: flex;
     align-items: center;
-    gap: 20px; 
+    gap: 20px;
 }
 
 #social-networks {
@@ -479,7 +482,7 @@ footer {
 }
 
 .fa-brands {
-    font-size: 1.5em; 
+    font-size: 1.5em;
 }
 
 
@@ -488,6 +491,10 @@ footer {
 
 
 /* Styles for phones (767px and below) */
+
+/* Welcome */
+
+
 
 /* Nav bar and hamburger icon */
 
@@ -518,18 +525,18 @@ footer {
 
     .ruth {
         display: flex;
-        flex-direction: column; 
-        align-items: flex-start; 
+        flex-direction: column;
+        align-items: flex-start;
         padding: 20px;
         margin-left: 10%;
     }
-    
+
     .ruth img {
         width: 300px;
         height: auto;
-        margin-bottom: 20px; 
+        margin-bottom: 20px;
     }
-    
+
     .creator h2 {
         font-size: 1.5em;
         font-weight: bold;
@@ -537,7 +544,7 @@ footer {
         text-align: center;
         margin: 20px 0;
     }
-    
+
     .ruth h3 {
         background-color: #F5F5F5;
         color: #333333;
@@ -548,7 +555,7 @@ footer {
         text-transform: capitalize;
         margin-bottom: 20px;
     }
-    
+
     .ruth p {
         color: black;
         font-size: 18px;
@@ -567,8 +574,8 @@ footer {
         font-family: "Montserrat Alternates", sans-serif;
         text-align: left;
         margin: 20px 0;
-     }
-    
+    }
+
     .timeline-header {
         background-color: #F5F5F5;
         color: #333333;
@@ -582,7 +589,7 @@ footer {
     }
 
 
-     #timeline-event {
+    #timeline-event {
         margin-left: 0;
         padding-left: 0;
         border-left: none;
@@ -601,7 +608,7 @@ footer {
         transform: translateX(18px);
     }
 
-   #timeline-event .content p {
+    #timeline-event .content p {
         margin-top: 10px;
     }
 
@@ -610,7 +617,8 @@ footer {
         border-color: transparent;
     }
 
-    .content:before, .content:after {
+    .content:before,
+    .content:after {
         border: solid transparent;
         bottom: 100%;
     }
@@ -644,14 +652,14 @@ footer {
         font-size: 25px;
     }
 
-    #timeline .timeline-header{
+    #timeline .timeline-header {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
 
-    /* footer */ 
+    /* footer */
 
     .footer-content {
         display: flex;
@@ -669,20 +677,27 @@ footer {
 
 /* Styles for tablets (768px to 1199px) */
 
+/* Welcome */
+
+#welcome {
+    background-size: cover; 
+    background-position: center top; 
+}
+
 /* Nav bar and hamburger icon */
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-   
+
     .menu {
-        display: none !important; 
+        display: none !important;
     }
 
     .hamburger {
-        display: none; 
+        display: none;
     }
 
     .nav {
-        display: block; 
+        display: block;
     }
 
     /* history */
@@ -691,10 +706,10 @@ footer {
         font-size: 2em;
         font-weight: 45%;
         font-family: "Montserrat Alternates", sans-serif;
-        
+
         padding: 20px;
         width: 100%;
-        
+
     }
 
 
@@ -715,7 +730,7 @@ footer {
         transform: translateX(18px);
     }
 
-   #timeline-event .content p {
+    #timeline-event .content p {
         margin-top: 10px;
     }
 
@@ -731,50 +746,56 @@ footer {
     }
 
     .date {
-    margin-top: -10px;
-    top: 50%;
-    left: -150px;
-    font-size: 2em;
-    line-height: 20px;
-    position: absolute;
-    color: black;
-}
+        margin-top: -10px;
+        top: 50%;
+        left: -150px;
+        font-size: 2em;
+        line-height: 20px;
+        position: absolute;
+        color: black;
+    }
 
-/* footer */ 
+    /* footer */
 
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-#social-networks {
-    justify-content: center;
-}
-
-
-
-/* Styles for large screens (1200px and above) */
-@media screen and (min-width: 1200px) {
+    #social-networks {
+        justify-content: center;
+    }
 
 
 
-/* Nav bar and hamburger icon */
+    /* Styles for large screens (1200px and above) */
+    @media screen and (min-width: 1200px) {
 
-.hamburger {
-    display: none !important;
-}
+        /* Welcome */
 
-.hidden-checkbox {
-    display: none !important;
-}
+        #welcome {
+            background-size: cover; 
+            background-position: center top; 
+            height: 80vh;
+        }
 
-.menu {
-    display: none !important;
-}
+        /* Nav bar and hamburger icon */
 
-.nav {
-    display: block;
-}
+        .hamburger {
+            display: none !important;
+        }
 
-}
+        .hidden-checkbox {
+            display: none !important;
+        }
+
+        .menu {
+            display: none !important;
+        }
+
+        .nav {
+            display: block;
+        }
+
+    }
