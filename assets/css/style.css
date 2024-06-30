@@ -68,7 +68,7 @@ a {
 }
 
 .logo__img {
-    max-height: 7rem;
+    max-height: 10rem;
     width: auto;
 }
 
@@ -99,7 +99,7 @@ a {
 .hamburger {
     display: none;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 45px;
     color: white;
 }
 
@@ -666,16 +666,12 @@ footer {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 
-    .menu {
-        display: none !important;
-    }
-
     .hamburger {
-        display: none;
+        display: block;
     }
 
     .nav {
-        display: block;
+        display: none;
     }
 
     /* history */
@@ -684,7 +680,6 @@ footer {
         font-size: 2em;
         font-weight: 45%;
         font-family: "Montserrat Alternates", sans-serif;
-
         padding: 20px;
         width: 100%;
 
