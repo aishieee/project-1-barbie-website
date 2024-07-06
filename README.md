@@ -27,3 +27,13 @@ Users of this website can find educational content about Barbie's lore, with a f
 - The logo sets the main color theme; Barbie pink and white, matching the style of the official Mattel (Barbie) brand.
 
 ![Website header](assets/images/barbie-header.png)
+
+#### 1. The Home page 
+
+- This section features the welcome banner, with a picture of the iconic Barbie heels showcased in the actual Barbie movie trailer, setting a strong first impression for the Barbie audience. The text "Welcome doll!" placed on top personally addresses the user with a term of endearment, creating a friendly and inviting atmosphere. This increases the likelihood of user engagement with the rest of the site.
+
+![Welcome banner](assets/images/welcome-banner.png)
+
+- After this, the section below features a photo of Barbie's original creator and explains the inspiration behind the doll. It sets the tone for the website by sharing the influential backstory of how Ruth Handler transformed a concept meant for adult amusement into a pioneering children's product, which has become an iconic and influential brand and role model. This backstory highlights Barbie not merely as a toy, but as a symbol of empowerment and possibility. It encourages users to delve deeper into the website to explore how these values manifest across Barbie's diverse forms and messages.
+
+![Barbie creator section](assets/images/barbie-creator-section.png)
