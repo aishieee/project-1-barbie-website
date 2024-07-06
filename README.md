@@ -37,3 +37,13 @@ Users of this website can find educational content about Barbie's lore, with a f
 - After this, the section below features a photo of Barbie's original creator and explains the inspiration behind the doll. It sets the tone for the website by sharing the influential backstory of how Ruth Handler transformed a concept meant for adult amusement into a pioneering children's product, which has become an iconic and influential brand and role model. This backstory highlights Barbie not merely as a toy, but as a symbol of empowerment and possibility. It encourages users to delve deeper into the website to explore how these values manifest across Barbie's diverse forms and messages.
 
 ![Barbie creator section](assets/images/barbie-creator-section.png)
+
+- Following the Home page section is the History section, which delves further into key milestones of the Barbie brand journey.
+
+- This includes an animated timeline using radio buttons and CSS animations. The timeline features events displayed as a vertical list, each marked with a coloured circle indicating a key event, the date, and a content area showing event details.
+
+- CSS code is used to provide the interactive timeline with smooth animations and accessibility features. It utilises Flexbox for layout, absolute positioning for precise element placement, and transitions for enhanced user interaction.
+
+- The purpose of the timeline is to allow users to digest a lot of content in manageable sections (key events), avoiding overwhelming them with all information at once. By selecting radio buttons, users reveal small sections of text, encouraging continuous reading or checking off of other buttons. Users can also pause and resume at their convenience, providing a more streamlined website experience. 
+
+![Timeline section](assets/images/barbie-timeline.png)
