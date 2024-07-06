@@ -68,3 +68,5 @@ Users of this website can find educational content about Barbie's lore, with a f
 - The links open in a new tab and the purpose is to gives users more rescources to explore Barbie's lore on various other platforms. 
 
 - The links are highlighted on all devices when the cursor hovers over the icons.
+
+![Footer](assets/images/footer.png)
