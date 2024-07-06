@@ -50,4 +50,21 @@ Users of this website can find educational content about Barbie's lore, with a f
 
 #### 4. The Impact page 
 
-- The final section sums up 
+- The final section explains Barbie’s role in promoting empowerment, inclusivity, and charity, emphasising that Barbie is a symbol of positive values and social impact.
+
+- Text sections are highlighted in different alternating colors to draw attention to specific names and projects shown in the slideshow above. Key phrases such as "Barbie," "Close the Dream Gap," and "Margot Robbie" are emphasized to connect with the relevant images, making the text engaging and easy to scan. The use of colours helps users quickly identify important information and navigate the content more effectively.
+
+- The centered text format makes it manageable to read a big chunk of text, encouraging users to explore the related images (referred to as pictures 1, 2, 3, and 4) for visual evidence.
+
+- The body tone of the text is fun and friendly, matching Barbie’s spirit, ensuring users can easily follow along with the text and slideshow.
+
+![Slideshow](assets/images/slideshow.png)
+![Impact text](assets/images/impact-text.png)
+
+#### 5. The Footer 
+
+- The footer section includes a text followed by links to Barbies official Twitter, Instagram, Youtube and a Barbie Wiki page. 
+
+- The links open in a new tab and the purpose is to gives users more rescources to explore Barbie's lore on various other platforms. 
+
+- The links are highlighted on all devices when the cursor hovers over the icons.
