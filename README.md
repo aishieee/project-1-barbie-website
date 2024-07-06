@@ -28,7 +28,7 @@ Users of this website can find educational content about Barbie's lore, with a f
 
 ![Website header](assets/images/barbie-header.png)
 
-#### 1. The Home page 
+#### 3. The Home page 
 
 - This section features the welcome banner, with a picture of the iconic Barbie heels showcased in the actual Barbie movie trailer, setting a strong first impression for the Barbie audience. The text "Welcome doll!" placed on top personally addresses the user with a term of endearment, creating a friendly and inviting atmosphere. This increases the likelihood of user engagement with the rest of the site.
 
@@ -47,3 +47,7 @@ Users of this website can find educational content about Barbie's lore, with a f
 - The purpose of the timeline is to allow users to digest a lot of content in manageable sections (key events), avoiding overwhelming them with all information at once. By selecting radio buttons, users reveal small sections of text, encouraging continuous reading or checking off of other buttons. Users can also pause and resume at their convenience, providing a more streamlined website experience. 
 
 ![Timeline section](assets/images/barbie-timeline.png)
+
+#### 4. The Impact page 
+
+- The final section sums up 
