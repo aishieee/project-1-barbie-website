@@ -63,10 +63,10 @@ Users of this website can find educational content about Barbie's lore, with a f
 
 #### 5. The Footer 
 
-- The footer section includes a text followed by links to Barbies official Twitter, Instagram, Youtube and a Barbie Wiki page. 
+- The footer section includes text followed by links to Barbie's official Twitter, Instagram, YouTube, and a Barbie Wiki page.
 
-- The links open in a new tab and the purpose is to gives users more rescources to explore Barbie's lore on various other platforms. 
+- All links open in a new tab to provide users with additional resources to explore Barbie's lore on various other platforms without leaving the website.
 
-- The links are highlighted on all devices when the cursor hovers over the icons.
+- On all devices, the links are highlighted when the cursor hovers over the icons, enhancing user interaction.
 
 ![Footer](assets/images/footer.png)
