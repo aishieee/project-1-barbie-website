@@ -104,9 +104,6 @@ body {
 }
 
 .ruth img {
-    width: 100%;
-    height: auto;
-    max-width: 15em;
     margin-right: 20px;
 }
 
@@ -149,7 +146,7 @@ body {
 #welcome {
     background-color: #f49fc8;
     width: 100%;
-    height: 30vh;
+    height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -158,8 +155,8 @@ body {
 
 .doll h1 {
     font-size: 2.5em;
-    font-weight: 400;
-    font-family: "Chewy", sans-serif;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Timeline */
@@ -296,13 +293,6 @@ body {
     transform: translateX(-50%);
 }
 
-.slider-nav a {
-    width: 1.5rem;
-    height: 1.5rem;
-    border-radius: 30%;
-    background-color: #191919;
-    opacity: 0.75;
-}
 
 .slider-nav a {
     text-decoration: none; 
@@ -474,8 +464,6 @@ footer {
     .doll h1 {
         font-size: 3.5em;
     }
-
-    /* Slideshow */
 
 
 }
