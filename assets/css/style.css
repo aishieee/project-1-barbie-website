@@ -40,6 +40,28 @@ body {
     width: auto;
 }
 
+/* Navigation */
+
+.nav, .menu {
+    list-style: none;
+    display:flex;
+    gap: 1em;
+}
+
+.nav a, .menu a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+.nav a:hover, .menu a:hover {
+    background-color: rgb(213, 21, 136);
+}
+
 
 /* Barbie's creator */
 
@@ -435,17 +457,6 @@ footer {
     width: 700px;
 }
 
-    
-/* Nav bar and hamburger icon */
-
-    .hamburger {
-        display: block;
-    }
-
-    .nav {
-        display: none;
-    }
-
 
     /* Barbie creator */
 
@@ -583,16 +594,6 @@ footer {
     }
 
 
-/* Nav bar and hamburger icon */
-
-    .hamburger {
-        display: block;
-    }
-
-    .nav {
-        display: none;
-    }
-
     /* history */
 
     #timeline {
@@ -669,23 +670,5 @@ footer {
 
         .doll h1 {
             font-size: 3.5em;
-        }
-
-        /* Nav bar and hamburger icon */
-
-        .hamburger {
-            display: none !important;
-        }
-
-        .hidden-checkbox {
-            display: none !important;
-        }
-
-        .menu {
-            display: none !important;
-        }
-
-        .nav {
-            display: block;
         }
 }
