@@ -116,11 +116,12 @@ body {
 
 /* Welcome */
 #welcome {
-    background-image: url('../images/barbie-welcome-pic-2-2.png');
-    height: 50vh;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url('../images/barbie-welcome-pic-2-2.webp');
     color: lavender;
+    height: 40vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -654,13 +655,7 @@ footer {
 
     /* Styles for large screens (801px and above) */
     @media screen and (min-width: 801px) {
-
-        #welcome {
-            height: 80vh;
-            width: 100vw;
-            background-size: 100% 80%;
-        }
-
+        
         .doll h1 {
             font-size: 3.5em;
         }
