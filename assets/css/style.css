@@ -18,7 +18,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 .header__content {
     width: 100%;
     height: 12em;
@@ -27,22 +26,17 @@ body {
     align-items: center;
     padding: 0 1em;
 }
-
 .logo__img {
     max-height: 6.5rem;
     width: auto;
 }
-
 /* Navigation */
-.nav,
-.menu {
+.nav, .menu {
     list-style: none;
     display: flex;
     gap: 1em;
 }
-
-.nav a,
-.menu a {
+.nav a, .menu a {
     text-decoration: none;
     color: white;
     padding: 15px;
@@ -51,11 +45,11 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
 }
-
-.nav a:hover,
-.menu a:hover {
+.nav a:hover, .menu a:hover {
     background-color: rgb(213, 21, 136);
 }
+
+/* History */
 
 .accordion {
     background-color: rgb(213, 21, 136);
@@ -105,6 +99,8 @@ body {
 
 .ruth img {
     margin-right: 20px;
+    width: 200px;
+    height: 200px;
 }
 
 .creator h2,
@@ -112,7 +108,7 @@ body {
 #impact {
     box-sizing: border-box;
     font-family: "Montserrat Alternates", sans-serif;
-    font-size: 2em;
+    font-size: 1.5em;
     background-color: #d14789;
     color: white;
     width: 100%;
@@ -122,15 +118,14 @@ body {
     padding: 5px 0;
 }
 
-.ruth h3 {
+.ruth h3, .timeline-header {
     background-color: #F5F5F5;
     color: #333333;
     font-family: 'Roboto', sans-serif;
     padding: 15px;
-    font-size: 1.5em;
-    text-align: left;
-    font-weight: bold;
-    margin-bottom: 20px;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .ruth p,
@@ -144,32 +139,22 @@ body {
 
 /* Welcome */
 #welcome {
-    background-color: #f49fc8;
     width: 100%;
     height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(227, 59, 179);
+    background-color: #f498c4;
 }
 
 .doll h1 {
-    font-size: 2.5em;
-    font-weight: bolder;
+    font-size: 4em;
     font-family: 'Roboto', sans-serif;
+    color: aliceblue;
+    background-color: #d14789;
 }
 
 /* Timeline */
-
-.timeline-header {
-    background-color: #F5F5F5;
-    color: #333333;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5em;
-    text-align: center;
-    font-weight: bold;
-    margin-top: 20px;
-}
 
 .accordion {
     font-size: 15px;
@@ -195,7 +180,8 @@ body {
 }
 
 .panel p {
-    font-family: "Roboto", sans-serif;;
+    font-family: "Roboto", sans-serif;
+    ;
 }
 
 .date,
@@ -224,7 +210,8 @@ body {
     padding: 50px 20px 0;
 }
 
-.content:before, .content:after {
+.content:before,
+.content:after {
     content: "";
     border: solid transparent;
     position: absolute;
@@ -295,10 +282,10 @@ body {
 
 
 .slider-nav a {
-    text-decoration: none; 
+    text-decoration: none;
     text-align: center;
-    color: white; 
-    font-weight: bold; 
+    color: white;
+    font-weight: bold;
 }
 
 .slideshow-text {
@@ -360,26 +347,21 @@ footer {
 /* Styles for phones (767px and below) */
 @media screen and (max-width: 767px) {
 
-    #welcome {
-        background-size: cover;
-        height: 30vh;
-        width: 100%;
-        justify-content: center;
-    }
-    
-    .doll h1 {
-        font-size: 2em;
-    }
-    
+    /* Header */
 
     .menu {
         flex-direction: column;
     }
 
+    /* Welcome */
+
+    .doll h1 {
+        font-size: 3em;
+    }
+
     /* Barbie creator */
     .ruth {
         flex-direction: column;
-        align-items: flex-start;
     }
 
     /* Timeline */
@@ -434,6 +416,12 @@ footer {
 /* Styles for tablets (800px and below) */
 @media screen and (max-width: 800px) {
 
+    /* Header */
+
+    .menu {
+        flex-direction: row;
+    }
+
     /* Timeline */
     #timeline-event {
         margin-left: 35%;
@@ -447,23 +435,4 @@ footer {
     #social-networks {
         justify-content: center;
     }
-}
-
-/* Styles for large screens (801px and above) */
-@media screen and (min-width: 801px) {
-
-    /* Welcome */
-
-    #welcome {
-        background-size: contain;
-        background-repeat: repeat;
-        background-position: left;
-        display: flex;
-        justify-content: center;
-    }
-    .doll h1 {
-        font-size: 3.5em;
-    }
-
-
 }
