@@ -79,7 +79,7 @@ body {
     margin-right: 20px;
 }
 
-.creator h2 {
+.creator h2, #timeline {
     box-sizing: border-box;
     font-family: "Montserrat Alternates", sans-serif;
     font-size: 2em;
@@ -159,128 +159,14 @@ body {
 }
 
 /* Timeline */
-#timeline-event {
-    list-style: none;
-    padding-left: 30px;
-    border-left: 8px solid #d14789;
-    margin-left: 35%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: system-ui;
-    flex-direction: column;
-    color: #120109;
-    background: white;
-}
 
-#timeline-event li {
+#timeline-event {
     margin: 40px 0;
     position: relative;
 }
 
 #timeline p {
     margin: 0 0 15px;
-}
-
-.date {
-    margin-top: -10px;
-    top: 50%;
-    left: -158px;
-    font-size: 2em;
-    line-height: 20px;
-    position: absolute;
-    color: black;
-}
-
-.circle {
-    margin-top: -10px;
-    top: 50%;
-    left: -44px;
-    width: 10px;
-    height: 10px;
-    background: black;
-    border: 5px solid #d14789;
-
-    display: block;
-    position: absolute;
-}
-
-.content {
-    padding: 50px 20px 0;
-    border-color: transparent;
-
-    border-style: solid;
-
-    position: relative;
-    overflow: auto;
-    transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
-}
-
-.content:before,
-.content:after {
-    content: "";
-
-    border: solid transparent;
-    position: absolute;
-    pointer-events: none;
-    right: 100%;
-}
-
-.content:before {
-    border-right-color: inherit;
-
-}
-
-.content:after {
-    border-right-color: lightgray;
-    border-width: 17px;
-    top: 50%;
-    margin-top: -17px;
-}
-
-.content p {
-    color: transparent;
-    text-align: justify;
-    word-break: break-word;
-    hyphens: auto;
-
-}
-
-label {
-    font-size: 1.3em;
-    position: absolute;
-    z-index: 100;
-    cursor: pointer;
-    top: 20px;
-    transition: transform 0.2s linear;
-}
-
-.radio {
-    display: block;
-}
-
-.radio:checked+.relative label {
-    cursor: auto;
-    transform: translateX(42px);
-}
-
-.radio:checked+.relative .circle {
-    background: lightgrey;
-}
-
-.radio:checked~.content {
-
-    border-color: palevioletred;
-    margin-right: 20px;
-    transform: translateX(20px);
-    transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
-    overflow: visible;
-}
-
-.radio:checked~.content p {
-
-    color: black;
-    overflow: visible;
 }
 
 /* Impact */
