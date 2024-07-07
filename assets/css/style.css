@@ -112,6 +112,7 @@ body {
 .ruth img {
     width: 100%;
     height: auto;
+    max-width: 15em;
     margin-right: 20px;
 }
 
@@ -135,7 +136,8 @@ body {
     color: #333333;
     font-family: 'Roboto', sans-serif;
     padding: 15px;
-    font-size: 15px;
+    font-size: 1.5em;
+    text-align: left;
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -151,29 +153,43 @@ body {
 
 /* Welcome */
 #welcome {
-    background-image: url('../images/barbie-welcome-pic-2-2.webp');
-    background-size: cover;
-    background-position: center;
+    background-color: #f49fc8;
     width: 100%;
-    height: 40vh;
-    /* Full height */
+    height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: lavender;
+    color: rgb(227, 59, 179);
 }
 
 .doll h1 {
-    font-size: 3.5em;
+    font-size: 2.5em;
     font-weight: 400;
     font-family: "Chewy", sans-serif;
 }
 
 /* Timeline */
+
+.timeline-header {
+    background-color: #F5F5F5;
+    color: #333333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.accordion {
+    font-size: 15px;
+    text-align: center;
+}
+
+
 #timeline-event {
     list-style: none;
     padding-left: 30px;
-    border-left: 8px solid #d14789;
+    border-left: 8px solid #f27bb4;
     color: #120109;
     background: white;
 }
@@ -181,6 +197,14 @@ body {
 #timeline-event li {
     margin: 40px 0;
     position: relative;
+}
+
+.accordion {
+    border-radius: 40%;
+}
+
+.panel p {
+    font-family: "Roboto", sans-serif;;
 }
 
 .date,
@@ -330,6 +354,19 @@ footer {
 /* Responsive design media queries */
 /* Styles for phones (767px and below) */
 @media screen and (max-width: 767px) {
+
+    #welcome {
+        background-size: cover;
+        height: 30vh;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .doll h1 {
+        font-size: 2em;
+    }
+    
+
     .menu {
         flex-direction: column;
     }
@@ -411,6 +448,14 @@ footer {
 @media screen and (min-width: 801px) {
 
     /* Welcome */
+
+    #welcome {
+        background-size: contain;
+        background-repeat: repeat;
+        background-position: left;
+        display: flex;
+        justify-content: center;
+    }
     .doll h1 {
         font-size: 3.5em;
     }
