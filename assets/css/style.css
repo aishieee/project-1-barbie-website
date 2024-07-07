@@ -171,7 +171,7 @@ main {
     height: 70vh;
     background-size: cover;
     background-position: 20%;
-    color: white;
+    color: rgba(241, 201, 238, 0.943);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -221,7 +221,7 @@ main {
     align-items: center;
     font-family: system-ui;
     flex-direction: column;
-    color: #d14789;
+    color: #120109;
     background: white;
 }
 
