@@ -1,7 +1,7 @@
 /*Google font imported texts */
 @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chewy&family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 /* Asterisk wildcard selector to override default styles added by the browser */
@@ -34,21 +34,21 @@ body {
     padding: 0 1em;
 }
 
-
 .logo__img {
     max-height: 6.5rem;
     width: auto;
 }
 
 /* Navigation */
-
-.nav, .menu {
+.nav,
+.menu {
     list-style: none;
-    display:flex;
+    display: flex;
     gap: 1em;
 }
 
-.nav a, .menu a {
+.nav a,
+.menu a {
     text-decoration: none;
     color: white;
     padding: 15px;
@@ -58,13 +58,49 @@ body {
     font-weight: 400;
 }
 
-.nav a:hover, .menu a:hover {
+.nav a:hover,
+.menu a:hover {
     background-color: rgb(213, 21, 136);
 }
 
+.accordion {
+    background-color: rgb(213, 21, 136);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.6s;
+    margin: 0.5rem 0;
+}
+
+.center {
+    text-align: center;
+}
+
+.active,
+.accordion:hover {
+    background-color: rgb(246, 4, 149);
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}
+
+.hidden-checkbox:checked~.menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #d14789;
+}
 
 /* Barbie's creator */
-
 .ruth {
     display: flex;
     flex-direction: row;
@@ -79,7 +115,9 @@ body {
     margin-right: 20px;
 }
 
-.creator h2, #timeline {
+.creator h2,
+#timeline,
+#impact {
     box-sizing: border-box;
     font-family: "Montserrat Alternates", sans-serif;
     font-size: 2em;
@@ -99,11 +137,11 @@ body {
     padding: 15px;
     font-size: 15px;
     font-weight: bold;
-    text-transform: capitalize;
     margin-bottom: 20px;
 }
 
-.ruth p {
+.ruth p,
+#impact-text p {
     color: black;
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
@@ -111,78 +149,100 @@ body {
     margin: 10px 0;
 }
 
-
 /* Welcome */
 #welcome {
     background-image: url('../images/barbie-welcome-pic-2-2.webp');
-    color: lavender;
-    height: 40vh;
-    width: 100%;
     background-size: cover;
     background-position: center;
+    width: 100%;
+    height: 40vh;
+    /* Full height */
     display: flex;
     justify-content: center;
     align-items: center;
+    color: lavender;
 }
 
 .doll h1 {
-    font-size: 2.5em;
+    font-size: 3.5em;
     font-weight: 400;
-    font-family: "Chewy", system-ui;
-}
-
-/* History section */
-
-
-#timeline {
-    font-family: "Montserrat Alternates", sans-serif;
-    font-size: 2em;
-    background-color: #d14789;
-    color: white;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px 0;
-}
-
-.timeline-header {
-    background-color: #F5F5F5;
-    color: #333333;
-    font-family: 'Roboto', sans-serif;
-    width: 45%;
-    font-size: 15px;
-    font-weight: bold;
-    text-transform: capitalize;
-    margin-left: 30%;
-    padding: 15px;
+    font-family: "Chewy", sans-serif;
 }
 
 /* Timeline */
-
 #timeline-event {
+    list-style: none;
+    padding-left: 30px;
+    border-left: 8px solid #d14789;
+    color: #120109;
+    background: white;
+}
+
+#timeline-event li {
     margin: 40px 0;
     position: relative;
 }
 
-#timeline p {
-    margin: 0 0 15px;
+.date,
+.circle,
+.content label {
+    position: absolute;
 }
 
-/* Impact */
-
-#impact {
-    font-family: "Montserrat Alternates", sans-serif;
+.date {
+    top: 50%;
+    left: -158px;
     font-size: 2em;
-    background-color: #d14789;
-    color: white;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px 0;
+    color: black;
 }
 
+.circle {
+    top: 50%;
+    left: -44px;
+    width: 10px;
+    height: 10px;
+    background: black;
+    border: 5px solid #d14789;
+}
+
+.content {
+    padding: 50px 20px 0;
+}
+
+.content:before, .content:after {
+    content: "";
+    border: solid transparent;
+    position: absolute;
+    pointer-events: none;
+    right: 100%;
+}
+
+.content:after {
+    border-right-color: lightgray;
+    border-width: 17px;
+    top: 50%;
+    margin-top: -17px;
+}
+
+.radio {
+    display: none;
+}
+
+.radio:checked~.relative label {
+    cursor: auto;
+    transform: translateX(42px);
+}
+
+.radio:checked~.content {
+    border-color: palevioletred;
+    transform: translateX(20px);
+}
+
+.radio:checked~.content p {
+    color: black;
+}
+
+/* Slideshow */
 .slideshow {
     padding: 2rem;
 }
@@ -209,15 +269,13 @@ body {
     object-fit: cover;
 }
 
-
 .slider-nav {
     display: flex;
-    column-gap: 1rem;
+    gap: 1rem;
     position: absolute;
     bottom: 1.25rem;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 1;
 }
 
 .slider-nav a {
@@ -225,61 +283,10 @@ body {
     height: 0.5rem;
     border-radius: 50%;
     background-color: #d14789;
-    color: transparent;
     opacity: 0.75;
-    transition: opacity ease 250ms;
-}
-
-/* Slideshow text */
-
-#impact-text p {
-    color: black;
-    font-size: 18px;
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    animation: slideIn 1.5s ease-in-out;
-}
-
-#impact-text p span {
-    color: hsl(277, 100%, 49%);
-    font-weight: bold;
-}
-
-#impact-text p em {
-    color: #db0e90;
-    font-style: italic;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes slideIn {
-    from {
-        transform: translateY(20px);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
 }
 
 /* Footer */
-
 footer {
     background-color: #d14789;
     width: 100%;
@@ -320,83 +327,46 @@ footer {
     font-size: 1.5em;
 }
 
-
 /* Responsive design media queries */
-
-
-
 /* Styles for phones (767px and below) */
-
 @media screen and (max-width: 767px) {
-
-/* Welcome */
-
-#welcome {
-    width: 700px;
-}
-
+    .menu {
+        flex-direction: column;
+    }
 
     /* Barbie creator */
-
     .ruth {
-        display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
 
-
-    /*timeline */
-
-    #timeline {
-        font-size: 1.5em;
-        text-align: left;
-    }
-
-    .timeline-header {
-        width: 45%;
-        font-size: 15px;
-        text-transform: capitalize;
-        padding: 15px;
-    }
-
-
+    /* Timeline */
     #timeline-event {
-        margin-left: 0;
         padding-left: 0;
         border-left: none;
     }
 
-    #timeline-event li {
-        padding: 50px 0;
+    .date {
+        left: auto;
+        right: 10px;
     }
 
-    label {
-        font-size: 1em;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        display: block;
-        transform: translateX(18px);
-    }
-
-    #timeline-event .content p {
-        margin-top: 10px;
+    .circle {
+        left: auto;
+        right: -15px;
     }
 
     .content {
         padding: 20px 10px;
-        border-color: transparent;
     }
 
     .content:before,
     .content:after {
-        border: solid transparent;
         bottom: 100%;
     }
 
     .content:before {
         border-bottom-color: inherit;
-        border-width: 17px;
         top: -16px;
         left: 50px;
         margin-left: -17px;
@@ -404,113 +374,32 @@ footer {
 
     .content:after {
         border-bottom-color: lightgray;
-        border-width: 20px;
         top: -20px;
         left: 50px;
         margin-left: -20px;
     }
 
-    .content p {
-        font-size: 0.9em;
-        line-height: 1.4;
-        padding-top: 0;
-    }
-
-    .date {
-        margin-left: 55%;
-        transform: translateY(20px);
-        position: relative;
-        font-size: 25px;
-    }
-
-    #timeline .timeline-header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    /* footer */
-
+    /* Footer */
     .footer-content {
-        display: flex;
         flex-direction: column;
-        align-items: center;
     }
 
     #social-networks {
         justify-content: center;
     }
-
 }
 
-
 /* Styles for tablets (800px and below) */
-
 @media screen and (max-width: 800px) {
 
-    #welcome {
-        height: 50vh;
-    }
-
-
-    /* history */
-
-    #timeline {
-        font-size: 2em;
-        padding: 20px;
-        width: 100%;
-    }
-
-
+    /* Timeline */
     #timeline-event {
-        margin-left: 0;
-        padding-left: 30px;
-        border-left: 8px solid #ff69b4;
         margin-left: 35%;
     }
 
-
-    label {
-        font-size: 1em;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        display: block;
-        transform: translateX(18px);
-    }
-
-    #timeline-event .content p {
-        margin-top: 10px;
-    }
-
-    .content {
-        padding: 20px 10px;
-        border-color: transparent;
-    }
-
-    .content p {
-        font-size: 0.9em;
-        line-height: 1.4;
-        padding-top: 0;
-    }
-
-    .date {
-        margin-top: -10px;
-        top: 50%;
-        left: -150px;
-        font-size: 2em;
-        line-height: 20px;
-        position: absolute;
-        color: black;
-    }
-
-    /* footer */
-
+    /* Footer */
     .footer-content {
-        display: flex;
         flex-direction: column;
-        align-items: center;
     }
 
     #social-networks {
@@ -518,11 +407,11 @@ footer {
     }
 }
 
+/* Styles for large screens (801px and above) */
+@media screen and (min-width: 801px) {
 
-    /* Styles for large screens (801px and above) */
-    @media screen and (min-width: 801px) {
-        
-        .doll h1 {
-            font-size: 3.5em;
-        }
+    /* Welcome */
+    .doll h1 {
+        font-size: 3.5em;
+    }
 }
