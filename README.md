@@ -137,7 +137,9 @@ This action creates a local clone of the project.
 
 - The social media links to X, Instagram, and Youtube are the real Mattel official accounts. The Wiki links to <a href="https://barbie.fandom.com/wiki/Barbie_Wiki">the Barbie Wiki, a FANDOM Lifestyle Community.</a>
 
-- The Favicon in header of the website was created by grouping wordtext and images in powerpoint. The images used were the official Barbie logo and Barbie head. 
+- The logo in header of the website was created by grouping wordtext and images in powerpoint. The images used were the official Barbie logo and Barbie head. 
+
+The favicon in the header of the website was created.....
 
 #### Media 
 
