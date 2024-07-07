@@ -127,6 +127,7 @@ a {
 }
 
 .creator h2 {
+    box-sizing: border-box;
     font-family: "Montserrat Alternates", sans-serif;
     font-size: 2em;
     background-color: #d14789;
@@ -520,63 +521,38 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding: 20px;
-        margin-left: 10%;
     }
 
     .ruth img {
-        width: 300px;
         height: auto;
-        margin-bottom: 20px;
     }
 
     .creator h2 {
         font-size: 1.5em;
-        font-weight: bold;
-        font-family: "Montserrat Alternates", sans-serif;
-        text-align: center;
-        margin: 20px 0;
+        width: 100vw;
     }
 
     .ruth h3 {
-        background-color: #F5F5F5;
-        color: #333333;
-        font-family: 'Roboto', sans-serif;
         padding: 15px;
         font-size: 15px;
-        font-weight: bold;
-        text-transform: capitalize;
-        margin-bottom: 20px;
     }
 
     .ruth p {
-        color: black;
         font-size: 18px;
-        font-family: 'Roboto', sans-serif;
         line-height: 1.6;
-        margin-top: 10px;
-        margin-bottom: 10px;
     }
 
     /*timeline */
 
     #timeline {
         font-size: 1.5em;
-        font-weight: bold;
-        font-family: "Montserrat Alternates", sans-serif;
         text-align: left;
-        margin: 20px 0;
     }
 
     .timeline-header {
-        background-color: #F5F5F5;
-        color: #333333;
-        font-family: 'Roboto', sans-serif;
         width: 45%;
         font-size: 15px;
-        font-weight: bold;
         text-transform: capitalize;
-        margin-left: 30%;
         padding: 15px;
     }
 
@@ -689,8 +665,6 @@ footer {
 
     #timeline {
         font-size: 2em;
-        font-weight: 45;
-        font-family: "Montserrat Alternates", sans-serif;
         padding: 20px;
         width: 100%;
     }
