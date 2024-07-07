@@ -86,3 +86,47 @@ No errors found when I ran the style.css code through the <a href="https://jigsa
 ![HTML val](assets/images/css-validator.png)
 
 
+
+## Deployment 
+
+#### Version Control 
+
+The website was developed using the Gitpod editor and uploaded to a GitHub remote repository named 'project-1-barbie-website'. Throughout the development process, Git commands facilitated the management of code updates. These included:
+
+- Using git add . to stage files before committing changes.
+
+- Employing git commit -m "commit message" to finalize changes in the local repository.
+
+- Using git push to upload all committed code to the GitHub remote repository.
+
+#### Deploying to Github Pages involved the following steps:
+
+1. Navigate to the Settings tab of the Github repository.
+
+2. Choose the Master branch from the source section drop-down menu and save the settings.
+
+2. Upon selecting the Master branch, the website link was generated.
+
+Live link: <a href="https://aishieee.github.io/project-1-barbie-website/">Project 1 - Barbie website</a>
+
+##Cloning of the Repository Code locally
+Go to the Github repository that you want to clone
+Click on the Code button located above all the project files
+Click on HTTPS and copy the repository link
+Open the IDE of your choice and and paste the copied git url into the IDE terminal
+The project is now created as a local clone
+
+
+#### To clone the repository code locally, follow these steps:
+
+1. Access the GitHub repository you wish to clone.
+
+2. Click on the "Code" button located above the project files.
+
+3. Select "HTTPS" and copy the repository link.
+
+4. Open your preferred Integrated Development Environment (IDE) and paste the copied Git URL into the IDE terminal.
+
+This action creates a local clone of the project.
+
+
