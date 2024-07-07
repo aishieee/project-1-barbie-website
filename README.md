@@ -129,4 +129,27 @@ The project is now created as a local clone
 
 This action creates a local clone of the project.
 
+## Credits 
+
+#### Content 
+
+- The social media icons in the footer were taken from <a href="https://fontawesome.com/">Font Awesome</a>
+
+- The social media links to X, Instagram, and Youtube are the real Mattel official accounts. The Wiki links to <a href="https://barbie.fandom.com/wiki/Barbie_Wiki">the Barbie Wiki, a FANDOM Lifestyle Community.</a>
+
+- The Favicon in header of the website was created by grouping wordtext and images in powerpoint. The images used were the official Barbie logo and Barbie head. 
+
+#### Media 
+
+- The animated timeline was adapted from <a href="https://codepen.io/rajeshkumarsah/pen/YJpQpJ">Codepen</a> with credits to rajeshkumarsah
+
+- The slideshow was adapted from <a href="https://codepen.io/NicholasByDesign/pen/qBOmQX">Codepen</a> with credits to NicholasByDesign
+
+#### Image Credits
+
+The images used in this project were sourced have been sourced from various locations, including search engines such as Google. I acknowledge that the images may be subject to copyright and encourage users to obtain proper permissions for usage.
+
+<em> Please note: For this project I do not claim ownership of these images and uses them for illustrative purposes under fair use. </em>
+
+- Request for Removal: If you are the copyright owner of any of the images used in this project and believe that their use infringes upon your rights, please contact aisha.sheikh@students.codeinstitute.net immediately. I will promptly remove the images upon verification of your ownership rights.
 
