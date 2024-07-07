@@ -14,25 +14,25 @@
 /* General styles */
 body {
     color: black;
+    padding-top: 12em;
 }
 
 /* Header */
 .header {
     background-color: #d14789;
     width: 100%;
-    height: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 9999;
 }
 
 .header__content {
     width: 100%;
+    height: 12em;
 }
 
 /* Nav bar */
@@ -98,8 +98,7 @@ a {
     flex-direction: column; 
     position: center;
     width: 100%; 
-    background-color: #d14789; 
-    
+    background-color: #d14789;  
 }
 
 .hamburger {
@@ -109,15 +108,6 @@ a {
     color: white;
 }
 
-
-
-/* Main content */
-main {
-    /* Make main element take up any surplus space to push footer down */
-    flex: 1 0 auto;
-    padding-top: 150px;
-    padding-bottom: 80px;
-}
 
 /* Barbie's creator */
 
@@ -501,12 +491,24 @@ footer {
 
 /* Responsive design media queries */
 
+
+
 /* Styles for phones (767px and below) */
 
+@media screen and (max-width: 767px) {
 
+/* Welcome */
+
+#welcome {
+    width: 100vw;
+}
+
+.doll h1 {
+    font-size: 2.5em; 
+}
+    
 /* Nav bar and hamburger icon */
 
-@media screen and (max-width: 767px) {
     .hamburger {
         display: block;
     }
@@ -668,11 +670,12 @@ footer {
 }
 
 
-/* Styles for tablets (768px to 1199px) */
+/* Styles for tablets (1199px and below) */
+
+@media screen and (max-width: 1199px) {
+
 
 /* Nav bar and hamburger icon */
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
 
     .hamburger {
         display: block;
@@ -751,7 +754,6 @@ footer {
 
     /* Styles for large screens (1200px and above) */
     @media screen and (min-width: 1200px) {
-
 
         /* Nav bar and hamburger icon */
 
