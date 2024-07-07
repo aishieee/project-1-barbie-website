@@ -390,7 +390,8 @@ label {
     width: 0.5rem;
     height: 0.5rem;
     border-radius: 50%;
-    background-color: white;
+    background-color: #d14789;
+    color: transparent;
     opacity: 0.75;
     transition: opacity ease 250ms;
 }
