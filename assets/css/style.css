@@ -273,7 +273,7 @@ body {
 
 .slideshow-content {
     position: relative;
-    max-width: 38rem;
+    max-width: 25em;
     margin: 0 auto;
 }
 
@@ -303,11 +303,32 @@ body {
 }
 
 .slider-nav a {
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 50%;
-    background-color: #d14789;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 30%;
+    background-color: #191919;
     opacity: 0.75;
+}
+
+.slider-nav a {
+    text-decoration: none; 
+    text-align: center;
+    color: white; 
+    font-weight: bold; 
+}
+
+.slideshow-text {
+    text-align: center;
+}
+
+.slideshow-text span {
+    color: #d14789;
+    font-weight: bold;
+}
+
+.slideshow-text em {
+    color: purple;
+    font-weight: bold;
 }
 
 /* Footer */
@@ -459,4 +480,8 @@ footer {
     .doll h1 {
         font-size: 3.5em;
     }
+
+    /* Slideshow */
+
+
 }
