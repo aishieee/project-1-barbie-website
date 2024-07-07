@@ -71,11 +71,10 @@ body {
     align-items: center;
     justify-content: flex-start;
     padding: 20px;
-    margin-left: 10%;
 }
 
 .ruth img {
-    width: 300px;
+    width: 100%;
     height: auto;
     margin-right: 20px;
 }
@@ -109,8 +108,7 @@ body {
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
 
@@ -460,24 +458,6 @@ footer {
         align-items: flex-start;
     }
 
-    .ruth img {
-        height: auto;
-    }
-
-    .creator h2 {
-        font-size: 1.5em;
-        width: 100vw;
-    }
-
-    .ruth h3 {
-        padding: 15px;
-        font-size: 15px;
-    }
-
-    .ruth p {
-        font-size: 18px;
-        line-height: 1.6;
-    }
 
     /*timeline */
 
