@@ -70,3 +70,19 @@ Users of this website can find educational content about Barbie's lore, with a f
 - On all devices, the links are highlighted when the cursor hovers over the icons, enhancing user interaction.
 
 ![Footer](assets/images/footer.png)
+
+## Testing 
+
+HTML 
+
+No errors found when I ran the index.html code through the <a href="https://validator.w3.org/">The W3C Markup Validation Service</a>
+
+![HTML val](assets/images/html-validator.png)
+
+CSS 
+
+No errors found when I ran the style.css code through the <a href="https://jigsaw.w3.org/css-validator/">The W3C CSS Validation Service</a>
+
+![HTML val](assets/images/css-validator.png)
+
+
