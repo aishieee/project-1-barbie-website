@@ -1,0 +1,33 @@
+/* Asterisk wildcard selector to override default styles added by the browser */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* General styles */
+body {
+  font-family: "Montserrat", serif;
+  color:black
+}
+
+/* Nav bar */
+
+.navbar {
+    background-color: #F6B9F8;
+  }
+  
+  .navbar-brand img {
+    width: 90px;
+    height: 60px;
+    max-width: 100%;
+  }
+  
+  .navbar-nav a {
+    color: #6B0049 !important;
+    font-weight: 500;
+  }
+  .navbar-nav :hover {
+    color: #f498c4 !important;
+  }
