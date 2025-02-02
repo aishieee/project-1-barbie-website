@@ -31,3 +31,25 @@ body {
   .navbar-nav :hover {
     color: #f498c4 !important;
   }
+
+/* Footer */
+
+.footer {
+    background-color: #F6B9F8;
+    padding: 8px 0;
+    font-size: 20px;
+    color: #6B0049;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer .fa-brands {
+    color: #6B0049;
+    font-size: 24px;
+    margin-left: 10px;
+    overflow: hidden;
+  }
+  
+  .footer :hover {
+    color: #f498c4;
+  }
