@@ -150,6 +150,16 @@ body {
 
 /* Timeline */ 
 
+.timeline {
+  padding: 50px 0;
+  background-color: #fce4ec; /* Light pink */
+  text-align: center;
+}
+.timeline img {
+  width: 100%;
+  border-radius: 10px;
+}
+
 .more {
   padding: 15px 0;
 }

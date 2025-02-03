@@ -33,3 +33,29 @@ function currentSlide(n) {
 let slideInterval = setInterval(() => {
     moveSlide(1);
 }, 5000);
+
+// Timeline 
+document.addEventListener("DOMContentLoaded", () => {
+    const faqs = document.querySelectorAll(".faq");
+  
+    faqs.forEach(faq => {
+      faq.querySelector(".faq-question").addEventListener("click", () => {
+        const answer = faq.querySelector(".faq-answer");
+        const icon = faq.querySelector(".icon");
+  
+        // Toggle the visibility of the answer
+        if (faq.classList.contains("open")) {
+          answer.style.display = "none";
+          faq.classList.remove("open");
+          icon.textContent = "+";
+        } else {
+          answer.style.display = "block";
+          faq.classList.add("open");
+          icon.textContent = "-";
+        }
+      });
+    });
+  });
+
+  
+  
