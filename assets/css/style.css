@@ -148,6 +148,76 @@ body {
     margin-bottom: 2%;
 }
 
+/* Timeline */ 
+
+.more {
+  padding: 15px 0;
+}
+.more h2 {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Lobster", serif;
+  font-weight: 400;
+  color: #000000;
+}
+
+.faq-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.faq-container {
+  margin-top: 20px;
+}
+
+.faq {
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+  padding: 15px;
+  cursor: pointer;
+  background-color: #97265C;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px 5px 0 0;
+  transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+  background-color: #d14789;
+}
+
+.faq-answer {
+  padding: 0 15px;
+  display: none;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+  border-radius: 0 0 5px 5px;
+}
+
+.faq-answer p {
+  padding: 15px 0;
+}
+
+.icon {
+  font-size: 24px;
+  transition: transform 0.3s ease;
+}
+
+.faq.open .icon {
+  transform: rotate(0deg); /* Changes "+" to "x", representing minus */
+}
+
 /* Footer */
 
 .footer {
