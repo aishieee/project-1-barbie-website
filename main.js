@@ -28,3 +28,8 @@ function moveSlide(n) {
 function currentSlide(n) {
     showSlide(n - 1);
 }
+
+// Auto-slider functionality 
+let slideInterval = setInterval(() => {
+    moveSlide(1);
+}, 5000);
