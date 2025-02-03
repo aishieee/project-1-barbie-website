@@ -20,3 +20,7 @@ function showSlide(index) {
     slides[currentSlideIndex].classList.add('active');
     dots[currentSlideIndex].classList.add('active');
 }
+
+function moveSlide(n) {
+    showSlide(currentSlideIndex + n);
+}
