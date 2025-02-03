@@ -24,3 +24,7 @@ function showSlide(index) {
 function moveSlide(n) {
     showSlide(currentSlideIndex + n);
 }
+
+function currentSlide(n) {
+    showSlide(n - 1);
+}
