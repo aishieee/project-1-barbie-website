@@ -56,3 +56,25 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
+
+// Video 
+document.addEventListener("DOMContentLoaded", () => {
+    const playButton = document.getElementById("playButton");
+    const video = document.getElementById("video");
+    const thumbnail = document.getElementById("thumbnail");
+  
+    playButton.addEventListener("click", () => {
+      playButton.style.display = "none"; // Hide the play button
+      thumbnail.style.display = "none"; // Hide the image
+      video.style.display = "block"; // Show the video
+      video.play(); // Play the video
+    });
+  
+    // Show play button and thumbnail if video is paused 
+    video.addEventListener("pause", () => {
+      playButton.style.display = "block";
+      thumbnail.style.display = "block";
+      video.style.display = "none";
+    });
+  });
+  
