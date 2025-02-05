@@ -359,3 +359,56 @@ h2 {
   .footer :hover {
     color: #f498c4;
   }
+
+  /* Styles for phones (767px and below) */
+@media screen and (max-width: 767px) {
+  .slider {
+    height: 300px;
+  }
+  .prev, .next {
+    padding: 10px;
+  }
+  
+  .faq-question {
+    font-size: 14px;
+  }
+  .faq-answer p {
+    font-size: 13px;
+  }
+
+  .about h2,
+  .more h2,
+  .inspairing h2 {
+    font-size: 24px;
+  }
+
+  .aboutleft h3 {
+    padding: 15px 0;
+    font-size: 18px;
+  }
+
+  .inspairing img {
+    width: 100%;
+    height: auto;
+  }
+
+  .video-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer {
+    font-size: 16px;
+    padding: 5px 0;
+  }
+}
+
+/* Responsive design media queries */
+
+/* Styles for phones (767px and below) */
+@media screen and (max-width: 767px) {
+}
+
+/* Styles for tablets (800px and below) */
+@media screen and (max-width: 800px) {
+}
