@@ -35,7 +35,6 @@ body {
 /* Slideshow */
 .slider {
     position: relative;
-    width: 100%;
     max-width: 100%;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -55,6 +54,7 @@ body {
   .slide img {
     width: 100%;
     height: 500px;
+    object-fit: cover;
     opacity: 0.8;
     z-index: 1;
     background-size: cover;
@@ -407,6 +407,15 @@ h2 {
 
 /* Styles for phones (767px and below) */
 @media screen and (max-width: 767px) {
+  /* Slideshow */
+  .slide img {
+    width: 100%;
+    height: 300px;
+}
+.prev, .next {
+  font-size: 18px; 
+}
+
 }
 
 /* Styles for tablets (800px and below) */
