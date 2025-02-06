@@ -294,10 +294,12 @@ body {
 /* Impact */
 h2 {
   color: #47003D;
-    font-size: 48px;
+    font-size: 3rem;
     font-family: "Lobster", serif;
     font-weight: 400;
     font-style: normal;
+    overflow: hidden;
+    padding: 10px 0;
 }
 
 
@@ -418,6 +420,15 @@ h2 {
   width: 70%;
   height: auto;
 }
+
+/* Impact */
+.impact-content {
+  flex-direction: column;
+}
+
+.impact-text, .impact-image {
+  width: 70%;
+}
 }
 /* Styles for tablets (991px and below) */
 @media screen and (max-width: 991px) (min-width: 766px) {
@@ -434,4 +445,8 @@ h2 {
      
 }
 
+/* Impact */
+.impact-text, .impact-image {
+  width: 80%;
+}
 }
