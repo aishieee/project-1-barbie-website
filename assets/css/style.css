@@ -143,9 +143,7 @@ body {
     max-width: 100%;
     border-radius: 6px;
     border: 3px solid #97265C;
-    display: block;           
-    margin-left: auto;       
-    margin-right: auto; 
+    display: block;                  
     margin-top: 30px;
     margin-bottom: 20px;
 }
@@ -153,20 +151,16 @@ body {
 /* Timeline */ 
 
 .simage img {
-  display: flex;
-  justify-content: center;
   border-radius: 5px; 
   border: 6px solid #d14789; 
-  max-width: 100%; 
-  max-height: 300px;
-  object-fit: contain;
+  max-width: 50%; 
+  margin-left: 20rem;
 }
 
 .timeline {
-  padding: 5px 0;
-  background-color: #fce4ec; 
   text-align: center;
 }
+
 .timeline img {
   width: 100%;
   border-radius: 10px;
@@ -195,6 +189,7 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
+  background-color: #fce4ec; 
 }
 
 .faq-container {
@@ -340,6 +335,7 @@ h2 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+
 /* Footer */
 
 .footer {
@@ -400,6 +396,10 @@ h2 {
 .about h2 {
   font-size: 2.5rem;
 }
+.simage img {
+  max-width: 70%;
+  margin-left: 5rem;
+}
 
 /* Video */
 .video-container {
@@ -423,15 +423,42 @@ h2 {
     font-size: 2.5rem;
   }
 
-  .about img {
-    max-width: 100%;
-    border-radius: 6px;
-    border: 3px solid #97265C;
-    margin-left: 10rem;
+  .about {
+    text-align: left;
+  }
+
+  .simage img {
+    max-width: 70%;
+    margin-left: 5rem;
   }
 
   /* Impact */
   .impact-text, .impact-image {
     width: 80%;
   }
+}
+
+/* Styles for larger screen sizes (1260px and above) */
+@media screen and (min-width: 1260px) {
+/* Slideshow */
+.slide img {
+  width: 100%;
+  height: auto;
+}
+/* About creator */
+.simage img {
+  width: 850px;
+}
+.about h2 {
+  font-size: 5rem;
+}
+
+.about {
+  font-size: x-large;
+}
+
+/* Timeline */
+.img {
+  width: 100%;
+}
 }
