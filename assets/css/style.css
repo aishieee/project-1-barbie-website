@@ -137,7 +137,7 @@ body {
     font-family: "Lobster", serif;
     font-weight: 400;
     font-style: normal;
-    padding: 2rem 0px;
+    padding: 10px 0;
 }
 .about img {
     max-width: 100%;
@@ -146,6 +146,8 @@ body {
     display: block;           
     margin-left: auto;       
     margin-right: auto; 
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 /* Timeline */ 
@@ -360,42 +362,6 @@ h2 {
     color: #f498c4;
   }
 
-  /* Styles for phones (767px and below) */
-@media screen and (max-width: 767px) {
-  .slider {
-    height: 300px;
-  }
-  .prev, .next {
-    padding: 10px;
-  }
-  
-  .faq-question {
-    font-size: 14px;
-  }
-  .faq-answer p {
-    font-size: 13px;
-  }
-
-  .aboutleft h3 {
-    padding: 15px 0;
-    font-size: 18px;
-  }
-
-  .inspairing img {
-    width: 100%;
-    height: auto;
-  }
-
-  .video-container {
-    width: 100%;
-    height: auto;
-  }
-
-  .footer {
-    font-size: 16px;
-    padding: 5px 0;
-  }
-}
 
 /* Responsive design media queries */
 
@@ -408,6 +374,26 @@ h2 {
 }
 .prev, .next {
   font-size: 18px; 
+}
+.slider {
+  height: 300px;
+}
+.prev, .next {
+  padding: 10px;
+}
+
+.faq-question {
+  font-size: 14px;
+}
+.faq-answer p {
+  font-size: 13px;
+}
+
+/* Footer */
+
+.footer {
+  font-size: 16px;
+  padding: 5px 0;
 }
 
 /* About creator */
@@ -431,22 +417,21 @@ h2 {
 }
 }
 /* Styles for tablets (991px and below) */
-@media screen and (max-width: 991px) (min-width: 766px) {
-/* About creator */
-.about h2 {
-  font-size: 2.5rem;
-}
+@media screen and (max-width: 991px) and (min-width: 766px) {
+  /* About creator */
+  .about h2 {
+    font-size: 2.5rem;
+  }
 
-.about img {
+  .about img {
     max-width: 100%;
     border-radius: 6px;
-    border: 3px solid #97265C;   
-    margin-left: 10rem; 
-     
-}
+    border: 3px solid #97265C;
+    margin-left: 10rem;
+  }
 
-/* Impact */
-.impact-text, .impact-image {
-  width: 80%;
-}
+  /* Impact */
+  .impact-text, .impact-image {
+    width: 80%;
+  }
 }
